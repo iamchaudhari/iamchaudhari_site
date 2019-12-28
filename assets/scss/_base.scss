@@ -1,0 +1,91 @@
+@import "assets/scss/_variables.scss";
+@import "material-components-web/material-components-web";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0rem;
+    @include mdc-typography(body2);
+    background-image: url('assets/images/body_bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    padding: 0rem 4.5rem;
+}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+#{$a-tags} {
+  color: $mdc-theme-primary;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: $iac-theme-primary-dark;
+}
+
+h1 {
+    @include mdc-typography(headline1);
+}
+
+h2 {
+    @include mdc-typography(headline2);
+}
+
+h3 {
+    @include mdc-typography(headline3);
+}
+
+h4 {
+    @include mdc-typography(headline4);
+}
+
+h5 {
+    @include mdc-typography(headline5);
+}
+
+h6 {
+    @include mdc-typography(headline6);
+}
+
+.body1 {
+    @include mdc-typography(body1);
+}
+
+p, .body2 {
+    @include mdc-typography(body2);
+}
+
+.caption {
+    @include mdc-typography(caption);
+}
+
+.overline {
+    @include mdc-typography(overline);
+}
+
+.mdc-chip {
+    @include mdc-ripple-surface;
+    @include mdc-ripple-radius-bounded;
+    @include mdc-states;
+    @include mdc-states-base-color($mdc-theme-primary);
+}
+
+button:focus {
+    outline: 0rem;
+}
+
+.bg-surface-light {
+    background-color: $iac-bg-grey !important;
+}
+
+input.ng-invalid.ng-touched {
+    @include mdc-text-field-invalid_;
+}

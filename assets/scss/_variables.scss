@@ -1,0 +1,23 @@
+// Sets the text color to the theme primary color.
+$mdc-theme-primary: #00796b;
+// Sets the text color to the theme secondary color.
+$mdc-theme-secondary: #00796b;
+// Sets the background color to the theme background color.
+$mdc-theme-background: #fff;
+// Sets the background color to the surface background color.
+$mdc-theme-surface: #fff;
+// Sets the text color to the color configured for text on the primary color.
+$mdc-theme-on-primary: #fff;
+// Sets the text color to the color configured for text on the secondary color.
+$mdc-theme-on-secondary: #fff;
+// Sets the text color to the color configured for text on the surface color.
+$mdc-theme-on-surface: #344955;
+
+
+$iac-theme-primary-dark: #004c40;
+$iac-bg-grey: #e7e9eb;
+
+
+$default-padding            : 20px;
+$quarter-padding            : $default-padding / 4;
+$half-padding               : $default-padding / 2;
